@@ -6,7 +6,7 @@ function calcularMontante (capital, taxa, periodo) {
 
 function arredondar (valor) {
   const precisao = 100
-  const arredondado = Math.round(valor * precisao) / precisao
+  const arredondado = Math.round((valor + Number.EPSILON) * precisao) / precisao
   return arredondado
 }
 
