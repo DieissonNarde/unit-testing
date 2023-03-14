@@ -23,4 +23,10 @@ describe('arredondar', () => {
     const resultado = calculaValor.arredondar(538.4453124999998)
     expect(resultado).toBe(538.45)
   })
+
+  test('1.005 deve retornar 1.01', () => {
+    const resultado = calculaValor.arredondar(1.005)
+
+    expect(resultado).toBe(1.01)
+  })
 })
