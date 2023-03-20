@@ -79,7 +79,7 @@ describe('calcularPrestacoes', () => {
 
     for (let i = 0; i < prestacoes.length - 1; i++) {
       const j = i + 1
-      expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[i])
+      expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[j])
     }
   })
 
@@ -94,11 +94,11 @@ describe('calcularPrestacoes', () => {
     // Então (then)
     expect(prestacoes.length).toBe(numeroPrestacoes)
     const soma = calculaValor.arredondar(prestacoes[0] + prestacoes[1] + prestacoes[2])
-    expect(soma).toBe(montante)
+    expect(soma).toBe(calculaValor.arredondar(montante))
 
     for (let i = 0; i < prestacoes.length - 1; i++) {
       const j = i + 1
-      expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[i])
+      expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[j])
     }
   })
 })
