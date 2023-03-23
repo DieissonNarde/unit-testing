@@ -3,7 +3,7 @@ const app = express()
 
 const { check, validationResult } = require('express-validator')
 
-const consultaCliente = require('./consulta-cliente')
+const consultaCliente = require('./consultaCliente')
 
 app.use(express.json())
 

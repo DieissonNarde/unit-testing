@@ -1,4 +1,4 @@
-const calculaValor = require('./calcula-valor')
+const calculaValor = require('./calculaValor')
 
 const db = require('./db')
 
